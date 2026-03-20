@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+data/uploads/
+data/index/
+data/chroma/
+data/chats/
+
+.DS_Store
+Thumbs.db
+.env
+*.env

@@ -1,0 +1,9 @@
+streamlit
+scikit-learn
+groq
+pypdf
+python-docx
+pandas
+requests
+python-dotenv
+
