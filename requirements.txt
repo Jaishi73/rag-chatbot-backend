@@ -1,9 +1,10 @@
-streamlit
-scikit-learn
+streamlit # type: ignore
+scikit-learn # pyright: ignore[reportUndefinedVariable]
 groq
 pypdf
 python-docx
 pandas
 requests
 python-dotenv
+
 

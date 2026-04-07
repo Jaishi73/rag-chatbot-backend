@@ -70,7 +70,7 @@ def load_docx(path: Path) -> List[LoadedDocument]:
 
 def _sniff_delimiter(sample: str) -> str:
     try:
-        dialect = csv.Sniffer().sniff(sample, delimiters=[",", ";", "\t", "|"])
+        dialect = csv.Sniffer().sniff(sample, delimiters=[",", ";", "\t", "|"]) # type: ignore
         return dialect.delimiter
     except Exception:
         return ","

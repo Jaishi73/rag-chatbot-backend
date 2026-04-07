@@ -1,0 +1,808 @@
+2026-03-27 12:46:05,704 | INFO | Cache MISS → calling LLM
+2026-03-27 12:46:06,936 | INFO | Response time: 1.29s
+2026-03-27 12:46:20,303 | INFO | Cache MISS → calling LLM
+2026-03-27 12:46:21,145 | INFO | Response time: 0.9s
+2026-03-27 12:46:24,504 | INFO | Cache SEMANTIC HIT
+2026-03-27 12:46:24,504 | INFO | Response time: 0.06s
+2026-03-27 12:46:35,427 | INFO | Cache SEMANTIC HIT
+2026-03-27 12:46:35,427 | INFO | Response time: 0.05s
+2026-03-27 12:47:13,702 | INFO | Cache SEMANTIC HIT
+2026-03-27 12:47:13,702 | INFO | Response time: 0.06s
+2026-03-27 13:04:45,024 | INFO | Cache MISS → calling LLM
+2026-03-27 13:04:45,859 | INFO | Response time: 0.89s
+2026-03-27 13:04:59,731 | INFO | Cache SEMANTIC HIT
+2026-03-27 13:04:59,731 | INFO | Response time: 0.06s
+2026-03-27 13:23:14,377 | INFO | User question: what is rcm?
+2026-03-27 13:23:14,378 | INFO | Retrieval started
+2026-03-27 13:23:14,388 | INFO | Retrieved 6 chunks
+2026-03-27 13:23:14,388 | INFO | Cache MISS → calling LLM
+2026-03-27 13:23:15,331 | INFO | Response time: 0.95s
+2026-03-27 13:23:31,731 | INFO | User question: what are the steps in rcm ?
+2026-03-27 13:23:31,731 | INFO | Retrieval started
+2026-03-27 13:23:31,734 | INFO | Retrieved 6 chunks
+2026-03-27 13:23:31,741 | INFO | Cache SEMANTIC HIT
+2026-03-27 13:23:31,741 | INFO | Response time: 0.01s
+2026-03-27 13:23:51,696 | INFO | User question: explain 13 steps in rcm ?
+2026-03-27 13:23:51,696 | INFO | Retrieval started
+2026-03-27 13:23:51,700 | INFO | Retrieved 6 chunks
+2026-03-27 13:23:51,703 | INFO | Cache MISS → calling LLM
+2026-03-27 13:23:52,990 | INFO | Response time: 1.29s
+2026-03-27 13:37:27,285 | INFO | User question: what is payment posting ?
+2026-03-27 13:37:27,286 | INFO | Retrieval started
+2026-03-27 13:37:27,290 | INFO | Retrieved 6 chunks
+2026-03-27 13:37:27,290 | INFO | Retrieval time: 0.004s
+2026-03-27 13:37:27,290 | INFO | Cache MISS → calling LLM
+2026-03-27 13:37:28,153 | INFO | LLM time: 0.863s
+2026-03-27 13:37:28,154 | INFO | Response time: 0.87s
+2026-03-27 13:38:13,307 | INFO | b'Stopping...'
+2026-03-27 13:47:54.131 | INFO | User question: what is rcm?
+2026-03-27 13:47:54.132 | INFO | Retrieval started
+2026-03-27 13:47:54.137 | INFO | Retrieved 6 chunks
+2026-03-27 13:47:54.137 | INFO | Retrieval time: 0.005s
+2026-03-27 13:47:54.138 | INFO | Cache MISS → calling LLM
+2026-03-27 13:47:55.023 | INFO | LLM time: 0.885s
+2026-03-27 13:47:55.024 | INFO | Response time: 0.89s
+2026-03-27 16:07:22.124 | INFO | User question: what is rcm?
+2026-03-27 16:07:22.125 | INFO | Retrieval started
+2026-03-27 16:07:22.129 | INFO | Retrieved 6 chunks
+2026-03-27 16:07:22.130 | INFO | Cache MISS → calling LLM
+2026-03-27 16:07:22.133 | ERROR | Pipeline error
+2026-03-27 16:07:22.133 | ERROR | Missing GROQ_API_KEY
+2026-03-27 16:07:22.146 | ERROR | Traceback (most recent call last):
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\api.py", line 81, in ask
+    ans = generate_answer(
+        question=req.question,
+        context_chunks=context_texts,
+        model=req.model
+    )
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\rag\llm.py", line 122, in generate_answer
+    answer = _cached_llm(
+        key,
+    ...<3 lines>...
+        temperature,
+    )
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\rag\llm.py", line 78, in _cached_llm
+    client = _get_client()
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\rag\llm.py", line 50, in _get_client
+    raise RuntimeError("Missing GROQ_API_KEY")
+RuntimeError: Missing GROQ_API_KEY
+
+2026-03-27 16:14:14.038 | INFO | User question: what is rcm?
+2026-03-27 16:14:14.039 | INFO | Retrieval started
+2026-03-27 16:14:14.039 | INFO | Retrieved 6 chunks
+2026-03-27 16:14:14.039 | INFO | Cache MISS → calling LLM
+2026-03-27 16:14:14.042 | ERROR | Pipeline error
+2026-03-27 16:14:14.043 | ERROR | Missing GROQ_API_KEY
+2026-03-27 16:14:14.046 | ERROR | Traceback (most recent call last):
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\api.py", line 81, in ask
+    ans = generate_answer(
+        question=req.question,
+        context_chunks=context_texts,
+        model=req.model
+    )
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\rag\llm.py", line 122, in generate_answer
+    answer = _cached_llm(
+        key,
+    ...<3 lines>...
+        temperature,
+    )
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\rag\llm.py", line 78, in _cached_llm
+    client = _get_client()
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\rag\llm.py", line 50, in _get_client
+    raise RuntimeError("Missing GROQ_API_KEY")
+RuntimeError: Missing GROQ_API_KEY
+
+2026-03-27 16:43:17.550 | INFO | User question: what is patient name ?
+2026-03-27 16:43:17.550 | INFO | Retrieval started
+2026-03-27 16:43:17.570 | INFO | Retrieved 6 chunks
+2026-03-27 16:43:17.570 | INFO | Cache MISS → calling LLM
+2026-03-27 16:43:19.515 | INFO | Response time: 1.97s
+2026-03-27 19:38:33.339 | INFO | User question: what is rcm?
+2026-03-27 19:38:33.340 | INFO | Retrieval started
+2026-03-27 19:38:33.441 | INFO | Retrieved 6 chunks
+2026-03-27 19:38:33.441 | INFO | Retrieval time: 0.101s
+2026-03-27 19:38:33.441 | INFO | Cache MISS → calling LLM
+2026-03-27 19:38:34.164 | INFO | LLM time: 0.722s
+2026-03-27 19:38:34.165 | INFO | Response time: 0.82s
+2026-03-27 19:39:13.890 | INFO | User question: what is patient name ?
+2026-03-27 19:39:13.890 | INFO | Retrieval started
+2026-03-27 19:39:13.898 | INFO | Retrieved 6 chunks
+2026-03-27 19:39:13.899 | INFO | Retrieval time: 0.008s
+2026-03-27 19:39:13.899 | INFO | Cache MISS → calling LLM
+2026-03-27 19:39:14.678 | INFO | LLM time: 0.778s
+2026-03-27 19:39:14.678 | INFO | Response time: 0.79s
+2026-03-27 19:39:27.429 | INFO | User question: what are symptms patient had ?
+2026-03-27 19:39:27.429 | INFO | Retrieval started
+2026-03-27 19:39:27.433 | INFO | Retrieved 6 chunks
+2026-03-27 19:39:27.433 | INFO | Retrieval time: 0.004s
+2026-03-27 19:39:27.451 | INFO | Similarity score:
+2026-03-27 19:39:27.451 | INFO | 0.7071067741154796
+2026-03-27 19:39:27.452 | INFO | Cache SEMANTIC HIT
+2026-03-27 19:39:27.452 | INFO | LLM time: 0.017s
+2026-03-27 19:39:27.452 | INFO | Response time: 0.02s
+2026-03-27 19:39:42.373 | INFO | User question: what disease patient have ?
+2026-03-27 19:39:42.374 | INFO | Retrieval started
+2026-03-27 19:39:42.377 | INFO | Retrieved 6 chunks
+2026-03-27 19:39:42.378 | INFO | Retrieval time: 0.003s
+2026-03-27 19:39:42.386 | INFO | Similarity score:
+2026-03-27 19:39:42.386 | INFO | 0.7071067741154796
+2026-03-27 19:39:42.387 | INFO | Cache SEMANTIC HIT
+2026-03-27 19:39:42.387 | INFO | LLM time: 0.009s
+2026-03-27 19:39:42.388 | INFO | Response time: 0.01s
+2026-03-27 19:39:58.468 | INFO | User question: what is payment posting ?
+2026-03-27 19:39:58.468 | INFO | Retrieval started
+2026-03-27 19:39:58.472 | INFO | Retrieved 6 chunks
+2026-03-27 19:39:58.473 | INFO | Retrieval time: 0.004s
+2026-03-27 19:39:58.476 | INFO | Similarity score:
+2026-03-27 19:39:58.477 | INFO | 0.0
+2026-03-27 19:39:58.477 | INFO | Cache MISS → calling LLM
+2026-03-27 19:39:59.747 | INFO | LLM time: 1.274s
+2026-03-27 19:39:59.748 | INFO | Response time: 1.28s
+2026-03-27 19:46:11.369 | INFO | b'Stopping...'
+2026-04-01 11:29:18.385 | INFO | User question: what is patient name ?
+2026-04-01 11:29:18.397 | INFO | Retrieval started
+2026-04-01 11:29:18.427 | INFO | Retrieved 6 chunks
+2026-04-01 11:29:18.427 | INFO | Cache MISS → calling LLM
+2026-04-01 11:29:21.639 | INFO | Response time: 3.26s
+2026-04-01 11:29:44.236 | INFO | User question: what is patient name ?
+2026-04-01 11:29:44.237 | INFO | Retrieval started
+2026-04-01 11:29:44.237 | INFO | Retrieved 6 chunks
+2026-04-01 11:29:44.248 | INFO | Cache SEMANTIC HIT
+2026-04-01 11:29:44.249 | INFO | Response time: 0.02s
+2026-04-01 11:32:22.138 | INFO | User question: what is patient name ?
+2026-04-01 11:32:22.138 | INFO | Retrieval started
+2026-04-01 11:32:22.139 | INFO | Retrieved 6 chunks
+2026-04-01 11:32:22.142 | INFO | Cache SEMANTIC HIT
+2026-04-01 11:32:22.142 | INFO | Response time: 0.02s
+2026-04-01 11:32:58.390 | INFO | User question: what is payment posting ?
+2026-04-01 11:32:58.391 | INFO | Retrieval started
+2026-04-01 11:32:58.394 | INFO | Retrieved 6 chunks
+2026-04-01 11:32:58.396 | INFO | Cache MISS → calling LLM
+2026-04-01 11:32:59.126 | INFO | Response time: 0.75s
+2026-04-01 11:33:59.171 | INFO | User question: what is patient health issue ?
+2026-04-01 11:33:59.171 | INFO | Retrieval started
+2026-04-01 11:33:59.175 | INFO | Retrieved 6 chunks
+2026-04-01 11:33:59.178 | INFO | Cache MISS → calling LLM
+2026-04-01 11:34:00.098 | INFO | Response time: 0.94s
+2026-04-01 11:34:53.869 | INFO | User question: what is rcm ?
+2026-04-01 11:34:53.869 | INFO | Retrieval started
+2026-04-01 11:34:53.884 | INFO | Retrieved 6 chunks
+2026-04-01 11:34:53.887 | INFO | Cache MISS → calling LLM
+2026-04-01 11:34:54.770 | INFO | Response time: 0.91s
+2026-04-01 11:41:27.616 | INFO | User question: what is payment posting ?
+2026-04-01 11:41:27.616 | INFO | Retrieval started
+2026-04-01 11:41:27.616 | INFO | Retrieved 6 chunks
+2026-04-01 11:41:27.619 | INFO | Cache MISS → calling LLM
+2026-04-01 11:41:28.429 | INFO | Response time: 0.81s
+2026-04-01 11:51:16.670 | INFO | User question: what is payment posting 
+2026-04-01 11:51:16.670 | INFO | Retrieval started
+2026-04-01 11:51:16.672 | INFO | Retrieved 6 chunks
+2026-04-01 11:51:16.677 | INFO | Cache SEMANTIC HIT
+2026-04-01 11:51:16.677 | INFO | Response time: 0.01s
+2026-04-01 11:51:29.383 | INFO | User question: what is rcm?
+2026-04-01 11:51:29.383 | INFO | Retrieval started
+2026-04-01 11:51:29.385 | INFO | Retrieved 6 chunks
+2026-04-01 11:51:29.388 | INFO | Cache SEMANTIC HIT
+2026-04-01 11:51:29.389 | INFO | Response time: 0.01s
+2026-04-01 12:13:39.110 | INFO | User question: what is rcm?
+2026-04-01 12:13:39.111 | INFO | Retrieval started
+2026-04-01 12:13:39.111 | INFO | Retrieved 6 chunks
+2026-04-01 12:13:39.114 | INFO | Cache SEMANTIC HIT
+2026-04-01 12:13:39.114 | INFO | Response time: 0.01s
+2026-04-01 12:13:59.162 | INFO | User question: what is denial managemnet ?
+2026-04-01 12:13:59.162 | INFO | Retrieval started
+2026-04-01 12:13:59.167 | INFO | Retrieved 6 chunks
+2026-04-01 12:13:59.170 | INFO | Cache MISS → calling LLM
+2026-04-01 12:13:59.967 | INFO | Response time: 0.81s
+2026-04-01 12:16:40.066 | INFO | User question: what is patient registration?
+2026-04-01 12:16:40.066 | INFO | Retrieval started
+2026-04-01 12:16:40.070 | INFO | Retrieved 6 chunks
+2026-04-01 12:16:40.073 | INFO | Cache MISS → calling LLM
+2026-04-01 12:16:41.206 | INFO | Response time: 1.15s
+2026-04-01 12:17:30.303 | INFO | User question: what is charge capture ?
+2026-04-01 12:17:30.304 | INFO | Retrieval started
+2026-04-01 12:17:30.308 | INFO | Retrieved 6 chunks
+2026-04-01 12:17:30.311 | INFO | Cache MISS → calling LLM
+2026-04-01 12:17:31.067 | INFO | Response time: 0.77s
+2026-04-01 12:22:10.480 | INFO | User question: who is primeminister of india ?
+2026-04-01 12:22:10.480 | INFO | Retrieval started
+2026-04-01 12:22:10.484 | INFO | Retrieved 6 chunks
+2026-04-01 12:22:10.487 | INFO | Cache MISS → calling LLM
+2026-04-01 12:22:11.364 | INFO | Response time: 0.89s
+2026-04-01 12:31:51.798 | INFO | User question: what is rcm ?
+2026-04-01 12:31:51.799 | INFO | Retrieval started
+2026-04-01 12:31:51.799 | INFO | Retrieved 6 chunks
+2026-04-01 12:31:51.803 | INFO | Cache SEMANTIC HIT
+2026-04-01 12:31:51.804 | INFO | Response time: 0.01s
+2026-04-01 12:44:28.647 | INFO | User question: what is rcm?
+2026-04-01 12:44:28.647 | INFO | Retrieval started
+2026-04-01 12:44:28.648 | INFO | Retrieved 6 chunks
+2026-04-01 12:44:28.652 | INFO | Cache SEMANTIC HIT
+2026-04-01 12:44:28.652 | INFO | Response time: 0.01s
+2026-04-01 12:44:55.668 | INFO | User question: what is revenue analysis ad reporting ?
+2026-04-01 12:44:55.669 | INFO | Retrieval started
+2026-04-01 12:44:55.672 | INFO | Retrieved 6 chunks
+2026-04-01 12:44:55.676 | INFO | Cache MISS → calling LLM
+2026-04-01 12:44:56.486 | INFO | Response time: 0.82s
+2026-04-01 12:45:33.471 | INFO | User question: what is compliance and auditing ?
+2026-04-01 12:45:33.472 | INFO | Retrieval started
+2026-04-01 12:45:33.476 | INFO | Retrieved 6 chunks
+2026-04-01 12:45:33.480 | INFO | Cache MISS → calling LLM
+2026-04-01 12:45:34.245 | INFO | Response time: 0.78s
+2026-04-01 12:56:01.128 | INFO | User question: what is rcm?
+2026-04-01 12:56:01.129 | INFO | Retrieval started
+2026-04-01 12:56:01.134 | INFO | Retrieved 6 chunks
+2026-04-01 12:56:01.135 | INFO | Cache MISS → calling LLM
+2026-04-01 12:56:03.541 | INFO | Response time: 2.42s
+2026-04-01 12:56:33.832 | INFO | User question: what is rcm ?
+2026-04-01 12:56:33.832 | INFO | Retrieval started
+2026-04-01 12:56:33.836 | INFO | Retrieved 6 chunks
+2026-04-01 12:56:33.839 | INFO | Cache SEMANTIC HIT
+2026-04-01 12:56:33.839 | INFO | Response time: 0.02s
+2026-04-01 12:56:46.659 | INFO | User question: what is payment posting ?
+2026-04-01 12:56:46.659 | INFO | Retrieval started
+2026-04-01 12:56:46.661 | INFO | Retrieved 6 chunks
+2026-04-01 12:56:46.664 | INFO | Cache MISS → calling LLM
+2026-04-01 12:56:47.494 | INFO | Response time: 0.84s
+2026-04-01 13:04:59.222 | INFO | User question: what is auditing?
+2026-04-01 13:04:59.223 | INFO | Retrieval started
+2026-04-01 13:04:59.227 | INFO | Retrieved 6 chunks
+2026-04-01 13:04:59.230 | INFO | Cache MISS → calling LLM
+2026-04-01 13:05:00.103 | INFO | Response time: 0.89s
+2026-04-01 13:05:16.359 | INFO | User question: what is payment posting ?
+2026-04-01 13:05:16.359 | INFO | Retrieval started
+2026-04-01 13:05:16.359 | INFO | Retrieved 6 chunks
+2026-04-01 13:05:16.362 | INFO | Cache SEMANTIC HIT
+2026-04-01 13:05:16.363 | INFO | Response time: 0.01s
+2026-04-01 13:05:45.444 | INFO | User question: what is denial trend analysis ?
+2026-04-01 13:05:45.445 | INFO | Retrieval started
+2026-04-01 13:05:45.449 | INFO | Retrieved 6 chunks
+2026-04-01 13:05:45.453 | INFO | Cache MISS → calling LLM
+2026-04-01 13:05:46.205 | INFO | Response time: 0.77s
+2026-04-01 13:17:21.986 | INFO | User question: what is rcm?
+2026-04-01 13:17:21.986 | INFO | Retrieval started
+2026-04-01 13:17:21.986 | INFO | Retrieved 6 chunks
+2026-04-01 13:17:22.015 | INFO | Cache SEMANTIC HIT
+2026-04-01 13:17:22.016 | INFO | Response time: 0.03s
+2026-04-01 13:17:31.895 | INFO | User question: what is cost effective?
+2026-04-01 13:17:31.896 | INFO | Retrieval started
+2026-04-01 13:17:31.899 | INFO | Retrieved 6 chunks
+2026-04-01 13:17:31.903 | INFO | Cache MISS → calling LLM
+2026-04-01 13:17:32.768 | INFO | Response time: 0.88s
+2026-04-01 13:23:51.330 | INFO | User question: what is rcm ?
+2026-04-01 13:23:51.330 | INFO | Retrieval started
+2026-04-01 13:23:51.331 | INFO | Retrieved 6 chunks
+2026-04-01 13:23:51.335 | INFO | Cache SEMANTIC HIT
+2026-04-01 13:23:51.336 | INFO | Response time: 0.01s
+2026-04-01 13:24:02.479 | INFO | User question: what is ayditing ?
+2026-04-01 13:24:02.480 | INFO | Retrieval started
+2026-04-01 13:24:02.482 | INFO | Retrieved 6 chunks
+2026-04-01 13:24:02.485 | INFO | Cache MISS → calling LLM
+2026-04-01 13:24:03.453 | INFO | Response time: 0.98s
+2026-04-01 13:24:21.238 | INFO | User question: what is auditing ?
+2026-04-01 13:24:21.238 | INFO | Retrieval started
+2026-04-01 13:24:21.242 | INFO | Retrieved 6 chunks
+2026-04-01 13:24:21.245 | INFO | Cache SEMANTIC HIT
+2026-04-01 13:24:21.246 | INFO | Response time: 0.01s
+2026-04-01 16:13:51.939 | INFO | User question: what is chatbot?
+2026-04-01 16:13:51.939 | INFO | Retrieval started
+2026-04-01 16:13:51.942 | INFO | Retrieved 6 chunks
+2026-04-01 16:13:51.950 | INFO | Cache MISS → calling LLM
+2026-04-01 16:13:52.918 | INFO | Response time: 0.98s
+2026-04-01 16:14:33.028 | INFO | User question: what auditing?
+2026-04-01 16:14:33.028 | INFO | Retrieval started
+2026-04-01 16:14:33.032 | INFO | Retrieved 6 chunks
+2026-04-01 16:14:33.036 | INFO | Cache SEMANTIC HIT
+2026-04-01 16:14:33.036 | INFO | Response time: 0.02s
+2026-04-01 16:14:57.494 | INFO | User question: what are the steps in rcm ? explain each steps in detail?
+2026-04-01 16:14:57.495 | INFO | Retrieval started
+2026-04-01 16:14:57.496 | INFO | Retrieved 6 chunks
+2026-04-01 16:14:57.500 | INFO | Cache MISS → calling LLM
+2026-04-01 16:14:59.301 | INFO | Response time: 1.81s
+2026-04-01 16:15:22.124 | INFO | User question: what is rcm ?
+2026-04-01 16:15:22.125 | INFO | Retrieval started
+2026-04-01 16:15:22.125 | INFO | Retrieved 6 chunks
+2026-04-01 16:15:22.130 | INFO | Cache SEMANTIC HIT
+2026-04-01 16:15:22.130 | INFO | Response time: 0.01s
+2026-04-01 16:16:48.609 | INFO | User question: what is patient responsibilty ?
+2026-04-01 16:16:48.610 | INFO | Retrieval started
+2026-04-01 16:16:48.615 | INFO | Retrieved 6 chunks
+2026-04-01 16:16:48.619 | INFO | Cache MISS → calling LLM
+2026-04-01 16:16:49.381 | INFO | Response time: 0.78s
+2026-04-01 16:20:49.765 | INFO | User question: types of denial management ?
+2026-04-01 16:20:49.766 | INFO | Retrieval started
+2026-04-01 16:20:49.770 | INFO | Retrieved 6 chunks
+2026-04-01 16:20:49.774 | INFO | Cache MISS → calling LLM
+2026-04-01 16:20:50.844 | INFO | Response time: 1.09s
+2026-04-01 16:21:18.714 | INFO | User question: what is denial management ?
+2026-04-01 16:21:18.714 | INFO | Retrieval started
+2026-04-01 16:21:18.716 | INFO | Retrieved 6 chunks
+2026-04-01 16:21:18.722 | INFO | Cache SEMANTIC HIT
+2026-04-01 16:21:18.722 | INFO | Response time: 0.01s
+2026-04-01 16:30:41.526 | INFO | User question: what are the steps in rcm explain each steps in detail ?
+2026-04-01 16:30:41.526 | INFO | Retrieval started
+2026-04-01 16:30:41.530 | INFO | Retrieved 6 chunks
+2026-04-01 16:30:41.534 | INFO | Cache SEMANTIC HIT
+2026-04-01 16:30:41.535 | INFO | Response time: 0.02s
+2026-04-01 16:32:18.343 | INFO | User question: what are the steps in rcm explain each steps in detail ?
+2026-04-01 16:32:18.343 | INFO | Retrieval started
+2026-04-01 16:32:18.344 | INFO | Retrieved 6 chunks
+2026-04-01 16:32:18.348 | INFO | Cache SEMANTIC HIT
+2026-04-01 16:32:18.348 | INFO | Response time: 0.01s
+2026-04-01 16:48:05.257 | INFO | User question: is timiely and effective follow up help AR to increase company revenue ?
+2026-04-01 16:48:05.258 | INFO | Retrieval started
+2026-04-01 16:48:05.262 | INFO | Retrieved 6 chunks
+2026-04-01 16:48:05.268 | INFO | Cache MISS → calling LLM
+2026-04-01 16:48:06.106 | INFO | Response time: 0.86s
+2026-04-01 16:48:39.933 | INFO | User question: is timiely and effective follow up help AR to increase company revenue ?
+2026-04-01 16:48:39.934 | INFO | Retrieval started
+2026-04-01 16:48:39.934 | INFO | Retrieved 6 chunks
+2026-04-01 16:48:39.938 | INFO | Cache SEMANTIC HIT
+2026-04-01 16:48:39.940 | INFO | Response time: 0.01s
+2026-04-01 16:48:59.648 | INFO | User question: what is timley and effective followup ?
+2026-04-01 16:48:59.648 | INFO | Retrieval started
+2026-04-01 16:48:59.651 | INFO | Retrieved 6 chunks
+2026-04-01 16:48:59.656 | INFO | Cache MISS → calling LLM
+2026-04-01 16:49:00.572 | INFO | Response time: 0.93s
+2026-04-01 17:05:32.395 | INFO | User question: What are the 13 steps of Revenue Cycle Management?
+2026-04-01 17:05:32.395 | INFO | Retrieval started
+2026-04-01 17:05:32.399 | INFO | Retrieved 6 chunks
+2026-04-01 17:05:32.405 | INFO | Cache MISS → calling LLM
+2026-04-01 17:05:33.223 | INFO | Response time: 0.83s
+2026-04-01 17:05:49.880 | INFO | User question: How does RCM impact healthcare financial stability?
+2026-04-01 17:05:49.880 | INFO | Retrieval started
+2026-04-01 17:05:49.882 | INFO | Retrieved 6 chunks
+2026-04-01 17:05:49.887 | INFO | Cache MISS → calling LLM
+2026-04-01 17:05:50.797 | INFO | Response time: 0.92s
+2026-04-01 17:06:13.015 | INFO | User question: What happens during patient registration?
+2026-04-01 17:06:13.016 | INFO | Retrieval started
+2026-04-01 17:06:13.019 | INFO | Retrieved 6 chunks
+2026-04-01 17:06:13.024 | INFO | Cache MISS → calling LLM
+2026-04-01 17:06:13.801 | INFO | Response time: 0.79s
+2026-04-01 17:07:01.873 | INFO | User question: What is accounts receivable follow-up?
+2026-04-01 17:07:01.873 | INFO | Retrieval started
+2026-04-01 17:07:01.878 | INFO | Retrieved 6 chunks
+2026-04-01 17:07:01.885 | INFO | Cache MISS → calling LLM
+2026-04-01 17:07:02.819 | INFO | Response time: 0.96s
+2026-04-01 17:35:03.143 | INFO | User question: How does insurance verification prevent claim denials?
+2026-04-01 17:35:03.143 | INFO | Retrieval started
+2026-04-01 17:35:03.147 | INFO | Retrieved 6 chunks
+2026-04-01 17:35:03.156 | INFO | Cache MISS → calling LLM
+2026-04-01 17:35:04.068 | INFO | Response time: 0.93s
+2026-04-01 17:35:27.731 | INFO | User question: How does denial management improve revenue cycle efficiency?
+2026-04-01 17:35:27.732 | INFO | Retrieval started
+2026-04-01 17:35:27.735 | INFO | Retrieved 6 chunks
+2026-04-01 17:35:27.741 | INFO | Cache MISS → calling LLM
+2026-04-01 17:35:28.621 | INFO | Response time: 0.89s
+2026-04-01 17:39:51.371 | INFO | User question: What challenges are faced in RCM?
+2026-04-01 17:39:51.372 | INFO | Retrieval started
+2026-04-01 17:39:51.377 | INFO | Retrieved 6 chunks
+2026-04-01 17:39:51.383 | INFO | Cache MISS → calling LLM
+2026-04-01 17:39:52.272 | INFO | Response time: 0.91s
+2026-04-01 17:42:25.706 | INFO | User question: what is rcm?
+2026-04-01 17:42:25.706 | INFO | Retrieval started
+2026-04-01 17:42:25.707 | INFO | Retrieved 6 chunks
+2026-04-01 17:42:25.714 | INFO | Cache SEMANTIC HIT
+2026-04-01 17:42:25.714 | INFO | Response time: 0.01s
+2026-04-01 17:59:10.150 | INFO | User question: what is rcm ?
+2026-04-01 17:59:10.151 | INFO | Retrieval started
+2026-04-01 17:59:10.156 | INFO | Retrieved 6 chunks
+2026-04-01 17:59:10.156 | INFO | Cache MISS → calling LLM
+2026-04-01 17:59:12.031 | INFO | Response time: 1.89s
+2026-04-01 17:59:33.075 | INFO | User question: what is payment posting?
+2026-04-01 17:59:33.076 | INFO | Retrieval started
+2026-04-01 17:59:33.078 | INFO | Retrieved 6 chunks
+2026-04-01 17:59:33.082 | INFO | Cache MISS → calling LLM
+2026-04-01 17:59:33.803 | INFO | Response time: 0.73s
+2026-04-01 17:59:51.477 | INFO | User question: what is rcm ?
+2026-04-01 17:59:51.477 | INFO | Retrieval started
+2026-04-01 17:59:51.478 | INFO | Retrieved 6 chunks
+2026-04-01 17:59:51.481 | INFO | Cache SEMANTIC HIT
+2026-04-01 17:59:51.481 | INFO | Response time: 0.01s
+2026-04-01 18:16:43.866 | INFO | User question: what is rcm ?
+2026-04-01 18:16:43.866 | INFO | Retrieval started
+2026-04-01 18:16:43.873 | INFO | Retrieved 6 chunks
+2026-04-01 18:16:43.873 | INFO | Cache MISS → calling LLM
+2026-04-01 18:16:46.003 | INFO | Response time: 2.14s
+2026-04-01 18:18:19.842 | INFO | User question: what is rcm ?
+2026-04-01 18:18:19.843 | INFO | Retrieval started
+2026-04-01 18:18:19.843 | INFO | Retrieved 6 chunks
+2026-04-01 18:18:19.846 | INFO | Cache SEMANTIC HIT
+2026-04-01 18:18:19.847 | INFO | Response time: 0.01s
+2026-04-01 18:21:16.343 | INFO | User question: what is patient nam e?
+2026-04-01 18:21:16.343 | INFO | Retrieval started
+2026-04-01 18:21:16.348 | INFO | Retrieved 6 chunks
+2026-04-01 18:21:16.353 | INFO | Cache MISS → calling LLM
+2026-04-01 18:21:17.217 | INFO | Response time: 0.88s
+2026-04-01 18:39:45.503 | INFO | User question: What is insurance verification and why is it needed?
+2026-04-01 18:39:45.503 | INFO | Retrieval started
+2026-04-01 18:39:45.509 | INFO | Retrieved 6 chunks
+2026-04-01 18:39:45.512 | INFO | Cache MISS → calling LLM
+2026-04-01 18:39:46.369 | INFO | Response time: 0.87s
+2026-04-01 18:40:08.860 | INFO | User question: What is electronic claim submission?
+2026-04-01 18:40:08.860 | INFO | Retrieval started
+2026-04-01 18:40:08.863 | INFO | Retrieved 6 chunks
+2026-04-01 18:40:08.868 | INFO | Cache MISS → calling LLM
+2026-04-01 18:40:09.650 | INFO | Response time: 0.79s
+2026-04-01 18:40:27.192 | INFO | User question: How does patient statement processing improve transparency?
+2026-04-01 18:40:27.193 | INFO | Retrieval started
+2026-04-01 18:40:27.196 | INFO | Retrieved 6 chunks
+2026-04-01 18:40:27.200 | INFO | Cache MISS → calling LLM
+2026-04-01 18:40:27.895 | INFO | Response time: 0.71s
+2026-04-01 18:41:23.527 | INFO | User question: What happens if insurance verification is skipped?
+2026-04-01 18:41:23.527 | INFO | Retrieval started
+2026-04-01 18:41:23.550 | INFO | Retrieved 6 chunks
+2026-04-01 18:41:23.550 | INFO | Cache MISS → calling LLM
+2026-04-01 18:41:24.506 | INFO | Response time: 0.98s
+2026-04-01 18:41:57.436 | INFO | User question: How does patient statement processing improve transparency?
+2026-04-01 18:41:57.437 | INFO | Retrieval started
+2026-04-01 18:41:57.440 | INFO | Retrieved 6 chunks
+2026-04-01 18:41:57.443 | INFO | Cache MISS → calling LLM
+2026-04-01 18:41:58.308 | INFO | Response time: 0.88s
+2026-04-01 18:42:11.156 | INFO | User question: What is electronic claim submission?
+2026-04-01 18:42:11.156 | INFO | Retrieval started
+2026-04-01 18:42:11.157 | INFO | Retrieved 6 chunks
+2026-04-01 18:42:11.160 | INFO | Cache MISS → calling LLM
+2026-04-01 18:42:11.980 | INFO | Response time: 0.83s
+2026-04-01 18:42:36.595 | INFO | User question: What is electronic claim submission?
+2026-04-01 18:42:36.595 | INFO | Retrieval started
+2026-04-01 18:42:36.596 | INFO | Retrieved 6 chunks
+2026-04-01 18:42:36.599 | INFO | Cache SEMANTIC HIT
+2026-04-01 18:42:36.599 | INFO | Response time: 0.01s
+2026-04-01 18:43:04.644 | INFO | User question: What is electronic claim submission?
+2026-04-01 18:43:04.645 | INFO | Retrieval started
+2026-04-01 18:43:04.645 | INFO | Retrieved 6 chunks
+2026-04-01 18:43:04.649 | INFO | Cache SEMANTIC HIT
+2026-04-01 18:43:04.649 | INFO | Response time: 0.01s
+2026-04-01 18:43:25.612 | INFO | User question: WHAT IS PATIENT NAM E?
+2026-04-01 18:43:25.613 | INFO | Retrieval started
+2026-04-01 18:43:25.617 | INFO | Retrieved 6 chunks
+2026-04-01 18:43:25.621 | INFO | Cache MISS → calling LLM
+2026-04-01 18:43:26.384 | INFO | Response time: 0.78s
+2026-04-01 18:44:13.404 | INFO | User question: What is electronic claim submission?
+2026-04-01 18:44:13.405 | INFO | Retrieval started
+2026-04-01 18:44:13.405 | INFO | Retrieved 6 chunks
+2026-04-01 18:44:13.409 | INFO | Cache MISS → calling LLM
+2026-04-01 18:44:14.236 | INFO | Response time: 0.83s
+2026-04-01 18:44:35.463 | INFO | User question: WHAT IS PATIENT NAM E?
+2026-04-01 18:44:35.463 | INFO | Retrieval started
+2026-04-01 18:44:35.464 | INFO | Retrieved 6 chunks
+2026-04-01 18:44:35.468 | INFO | Cache MISS → calling LLM
+2026-04-01 18:44:36.332 | INFO | Response time: 0.88s
+2026-04-01 18:46:37.773 | INFO | User question: What is electronic claim submission?
+2026-04-01 18:46:37.773 | INFO | Retrieval started
+2026-04-01 18:46:37.774 | INFO | Retrieved 6 chunks
+2026-04-01 18:46:37.777 | INFO | Cache MISS → calling LLM
+2026-04-01 18:46:38.717 | INFO | Response time: 0.95s
+2026-04-01 18:50:46.949 | INFO | User question: what is rcm ?
+2026-04-01 18:50:46.949 | INFO | Retrieval started
+2026-04-01 18:50:46.969 | INFO | Retrieved 6 chunks
+2026-04-01 18:50:46.970 | INFO | Cache MISS → calling LLM
+2026-04-01 18:50:48.111 | INFO | Response time: 1.16s
+2026-04-01 18:53:37.123 | INFO | User question: what is rcm?
+2026-04-01 18:53:37.123 | INFO | Retrieval started
+2026-04-01 18:53:37.125 | INFO | Retrieved 0 chunks
+2026-04-01 18:53:37.125 | INFO | Response time: 0.01s
+2026-04-01 18:53:58.128 | INFO | User question: what is patient responsibility ?
+2026-04-01 18:53:58.129 | INFO | Retrieval started
+2026-04-01 18:53:58.130 | INFO | Retrieved 0 chunks
+2026-04-01 18:53:58.130 | INFO | Response time: 0.0s
+2026-04-01 18:54:29.211 | INFO | User question: what is rcm?
+2026-04-01 18:54:29.212 | INFO | Retrieval started
+2026-04-01 18:54:29.212 | INFO | Retrieved 0 chunks
+2026-04-01 18:54:29.212 | INFO | Response time: 0.01s
+2026-04-01 18:54:47.673 | INFO | User question: What is denial management?
+2026-04-01 18:54:47.674 | INFO | Retrieval started
+2026-04-01 18:54:47.678 | INFO | Retrieved 6 chunks
+2026-04-01 18:54:47.678 | INFO | Cache MISS → calling LLM
+2026-04-01 18:54:49.066 | INFO | Response time: 1.4s
+2026-04-01 18:54:59.072 | INFO | User question: what is rcm?
+2026-04-01 18:54:59.072 | INFO | Retrieval started
+2026-04-01 18:54:59.072 | INFO | Retrieved 0 chunks
+2026-04-01 18:54:59.073 | INFO | Response time: 0.0s
+2026-04-01 19:07:04.758 | INFO | User question: what is rcm ?
+2026-04-01 19:07:04.759 | INFO | Retrieval started
+2026-04-01 19:07:04.762 | INFO | Retrieved 6 chunks
+2026-04-01 19:07:04.765 | INFO | Cache MISS → calling LLM
+2026-04-01 19:07:05.510 | INFO | Response time: 0.76s
+2026-04-01 19:07:14.195 | INFO | User question: what is patient am e?
+2026-04-01 19:07:14.196 | INFO | Retrieval started
+2026-04-01 19:07:14.198 | INFO | Retrieved 6 chunks
+2026-04-01 19:07:14.202 | INFO | Cache MISS → calling LLM
+2026-04-01 19:07:14.888 | INFO | Response time: 0.7s
+2026-04-01 19:07:31.347 | INFO | User question: what is patient name and his age ?
+2026-04-01 19:07:31.347 | INFO | Retrieval started
+2026-04-01 19:07:31.349 | INFO | Retrieved 6 chunks
+2026-04-01 19:07:31.351 | INFO | Cache SEMANTIC HIT
+2026-04-01 19:07:31.352 | INFO | Response time: 0.01s
+2026-04-01 19:17:29.086 | INFO | User question: hello 
+2026-04-01 19:17:29.087 | INFO | Retrieval started
+2026-04-01 19:17:29.090 | INFO | Retrieved 6 chunks
+2026-04-01 19:17:29.093 | INFO | Cache MISS → calling LLM
+2026-04-01 19:17:29.797 | INFO | Response time: 0.72s
+2026-04-01 19:17:48.344 | INFO | User question: can you help me by answering from pad 
+2026-04-01 19:17:48.344 | INFO | Retrieval started
+2026-04-01 19:17:48.346 | INFO | Retrieved 6 chunks
+2026-04-01 19:17:48.349 | INFO | Cache MISS → calling LLM
+2026-04-01 19:17:48.963 | INFO | Response time: 0.62s
+2026-04-01 19:18:17.935 | INFO | User question: can you help me by answering question from uploaded document 
+2026-04-01 19:18:17.936 | INFO | Retrieval started
+2026-04-01 19:18:17.940 | INFO | Retrieved 6 chunks
+2026-04-01 19:18:17.943 | INFO | Cache MISS → calling LLM
+2026-04-01 19:18:18.679 | INFO | Response time: 0.75s
+2026-04-02 11:31:29.401 | INFO | User question: what is rcm?
+2026-04-02 11:31:29.409 | INFO | Retrieval started
+2026-04-02 11:31:29.676 | INFO | Retrieved 6 chunks
+2026-04-02 11:31:29.676 | INFO | Cache MISS → calling LLM
+2026-04-02 11:31:32.950 | ERROR | Pipeline error
+2026-04-02 11:31:32.950 | ERROR | name 'ans' is not defined
+2026-04-02 11:31:32.965 | ERROR | Traceback (most recent call last):
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\api.py", line 92, in ask
+    ans = generate_answer(
+        question=req.question,
+        context_chunks=context_texts,
+        model=req.model
+    )
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\rag\llm.py", line 126, in generate_answer
+    if ans.cache_status != "NO_CONTEXT":
+       ^^^
+NameError: name 'ans' is not defined. Did you mean: 'abs'?
+
+2026-04-02 11:31:43.359 | INFO | User question: what is rcm?
+2026-04-02 11:31:43.360 | INFO | Retrieval started
+2026-04-02 11:31:43.360 | INFO | Retrieved 6 chunks
+2026-04-02 11:31:43.361 | INFO | Cache MISS → calling LLM
+2026-04-02 11:31:43.365 | ERROR | Pipeline error
+2026-04-02 11:31:43.365 | ERROR | name 'ans' is not defined
+2026-04-02 11:31:43.368 | ERROR | Traceback (most recent call last):
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\api.py", line 92, in ask
+    ans = generate_answer(
+        question=req.question,
+        context_chunks=context_texts,
+        model=req.model
+    )
+  File "C:\Users\jajaiswal\Documents\chatbot assistant c\rag\llm.py", line 126, in generate_answer
+    if ans.cache_status != "NO_CONTEXT":
+       ^^^
+NameError: name 'ans' is not defined. Did you mean: 'abs'?
+
+2026-04-02 11:40:22.565 | INFO | User question: what is rcm?
+2026-04-02 11:40:22.565 | INFO | Retrieval started
+2026-04-02 11:40:22.570 | INFO | Retrieved 6 chunks
+2026-04-02 11:40:22.570 | INFO | Cache MISS → calling LLM
+2026-04-02 11:40:23.693 | INFO | Response time: 1.13s
+2026-04-02 11:41:02.171 | INFO | User question: what is rcm?
+2026-04-02 11:41:02.172 | INFO | Retrieval started
+2026-04-02 11:41:02.172 | INFO | Retrieved 6 chunks
+2026-04-02 11:41:02.175 | INFO | Cache MISS → calling LLM
+2026-04-02 11:41:02.982 | INFO | Response time: 0.82s
+2026-04-02 11:41:24.866 | INFO | User question: what is rcm?
+2026-04-02 11:41:24.866 | INFO | Retrieval started
+2026-04-02 11:41:24.867 | INFO | Retrieved 6 chunks
+2026-04-02 11:41:24.874 | INFO | Cache SEMANTIC HIT
+2026-04-02 11:41:24.874 | INFO | Response time: 0.01s
+2026-04-02 11:44:21.176 | INFO | User question: what is rcm?
+2026-04-02 11:44:21.177 | INFO | Retrieval started
+2026-04-02 11:44:21.180 | INFO | Retrieved 6 chunks
+2026-04-02 11:44:21.181 | INFO | Cache MISS → calling LLM
+2026-04-02 11:44:21.897 | INFO | Response time: 0.72s
+2026-04-02 11:45:48.041 | INFO | User question: what is rcm?
+2026-04-02 11:45:48.041 | INFO | Retrieval started
+2026-04-02 11:45:48.052 | INFO | Retrieved 6 chunks
+2026-04-02 11:45:48.052 | INFO | Cache MISS → calling LLM
+2026-04-02 11:45:49.420 | INFO | Response time: 1.38s
+2026-04-02 11:46:19.091 | INFO | User question: what is rcm?
+2026-04-02 11:46:19.091 | INFO | Retrieval started
+2026-04-02 11:46:19.092 | INFO | Retrieved 6 chunks
+2026-04-02 11:46:19.095 | INFO | Cache SEMANTIC HIT
+2026-04-02 11:46:19.095 | INFO | Response time: 0.01s
+2026-04-02 11:46:57.531 | INFO | User question: who is prime mininster of india 
+2026-04-02 11:46:57.531 | INFO | Retrieval started
+2026-04-02 11:46:57.535 | INFO | Retrieved 6 chunks
+2026-04-02 11:46:57.537 | INFO | Cache MISS → calling LLM
+2026-04-02 11:46:58.214 | INFO | Response time: 0.69s
+2026-04-02 11:47:49.617 | INFO | User question: what is patient name and age ?
+2026-04-02 11:47:49.617 | INFO | Retrieval started
+2026-04-02 11:47:49.621 | INFO | Retrieved 6 chunks
+2026-04-02 11:47:49.624 | INFO | Cache MISS → calling LLM
+2026-04-02 11:47:50.371 | INFO | Response time: 0.76s
+2026-04-02 11:48:09.722 | INFO | User question: what is payment posting ?
+2026-04-02 11:48:09.723 | INFO | Retrieval started
+2026-04-02 11:48:09.725 | INFO | Retrieved 6 chunks
+2026-04-02 11:48:09.728 | INFO | Cache MISS → calling LLM
+2026-04-02 11:48:10.462 | INFO | Response time: 0.74s
+2026-04-02 11:48:24.280 | INFO | User question: what denial mangement 
+2026-04-02 11:48:24.281 | INFO | Retrieval started
+2026-04-02 11:48:24.284 | INFO | Retrieved 6 chunks
+2026-04-02 11:48:24.288 | INFO | Cache MISS → calling LLM
+2026-04-02 11:48:25.235 | INFO | Response time: 0.96s
+2026-04-02 11:54:20.499 | INFO | User question: what is denial managemenr?
+2026-04-02 11:54:20.499 | INFO | Retrieval started
+2026-04-02 11:54:20.501 | INFO | Retrieved 6 chunks
+2026-04-02 11:54:20.501 | INFO | Cache MISS → calling LLM
+2026-04-02 11:54:21.567 | INFO | Response time: 1.07s
+2026-04-02 11:55:13.284 | INFO | User question: explain in details about denial management ?
+2026-04-02 11:55:13.284 | INFO | Retrieval started
+2026-04-02 11:55:13.289 | INFO | Retrieved 6 chunks
+2026-04-02 11:55:13.293 | INFO | Cache MISS → calling LLM
+2026-04-02 11:55:14.535 | INFO | Response time: 1.26s
+2026-04-02 11:55:58.346 | INFO | User question: What is patient statement processing?
+2026-04-02 11:55:58.346 | INFO | Retrieval started
+2026-04-02 11:55:58.350 | INFO | Retrieved 6 chunks
+2026-04-02 11:55:58.353 | INFO | Cache MISS → calling LLM
+2026-04-02 11:55:59.193 | INFO | Response time: 0.85s
+2026-04-02 11:56:08.515 | INFO | User question: What is revenue analysis and reporting?
+2026-04-02 11:56:08.516 | INFO | Retrieval started
+2026-04-02 11:56:08.517 | INFO | Retrieved 6 chunks
+2026-04-02 11:56:08.521 | INFO | Cache MISS → calling LLM
+2026-04-02 11:56:09.240 | INFO | Response time: 0.73s
+2026-04-02 11:56:21.824 | INFO | User question: What is accounts receivable follow-up?
+2026-04-02 11:56:21.824 | INFO | Retrieval started
+2026-04-02 11:56:21.826 | INFO | Retrieved 6 chunks
+2026-04-02 11:56:21.829 | INFO | Cache MISS → calling LLM
+2026-04-02 11:56:22.484 | INFO | Response time: 0.66s
+2026-04-02 11:56:42.042 | INFO | User question: What are clean claims in claim submission?
+2026-04-02 11:56:42.042 | INFO | Retrieval started
+2026-04-02 11:56:42.046 | INFO | Retrieved 6 chunks
+2026-04-02 11:56:42.050 | INFO | Cache MISS → calling LLM
+2026-04-02 11:56:42.874 | INFO | Response time: 0.84s
+2026-04-02 11:57:04.676 | INFO | User question: How does denial management improve revenue cycle efficiency?
+2026-04-02 11:57:04.677 | INFO | Retrieval started
+2026-04-02 11:57:04.678 | INFO | Retrieved 6 chunks
+2026-04-02 11:57:04.682 | INFO | Cache MISS → calling LLM
+2026-04-02 11:57:05.567 | INFO | Response time: 0.89s
+2026-04-02 11:57:45.520 | INFO | User question: What strategies improve patient payment collection?
+2026-04-02 11:57:45.520 | INFO | Retrieval started
+2026-04-02 11:57:45.522 | INFO | Retrieved 0 chunks
+2026-04-02 11:57:45.522 | INFO | Response time: 0.0s
+2026-04-02 11:57:55.503 | INFO | User question: Why is accounts receivable follow-up important?
+2026-04-02 11:57:55.503 | INFO | Retrieval started
+2026-04-02 11:57:55.506 | INFO | Retrieved 0 chunks
+2026-04-02 11:57:55.506 | INFO | Response time: 0.01s
+2026-04-02 11:58:09.042 | INFO | User question: how does denial management improve revenue cycle efficiency
+2026-04-02 11:58:09.042 | INFO | Retrieval started
+2026-04-02 11:58:09.044 | INFO | Retrieved 0 chunks
+2026-04-02 11:58:09.044 | INFO | Response time: 0.0s
+2026-04-03 12:45:12.441 | INFO | User question: what is rcm?
+2026-04-03 12:45:12.442 | INFO | Retrieval started
+2026-04-03 12:45:12.462 | INFO | Retrieved 0 chunks
+2026-04-03 12:45:12.462 | INFO | Response time: 0.02s
+2026-04-03 12:59:14.978 | INFO | User question: what is rcm?
+2026-04-03 12:59:14.979 | INFO | Retrieval started
+2026-04-03 12:59:14.984 | INFO | Retrieved 0 chunks
+2026-04-03 12:59:14.984 | INFO | Response time: 0.01s
+2026-04-03 12:59:33.785 | INFO | User question: what is rcm?
+2026-04-03 12:59:33.785 | INFO | Retrieval started
+2026-04-03 12:59:33.787 | INFO | Retrieved 6 chunks
+2026-04-03 12:59:33.788 | INFO | Cache MISS → calling LLM
+2026-04-03 12:59:36.136 | INFO | Response time: 2.35s
+2026-04-03 13:00:24.216 | INFO | User question: in which page the topic rcm definationgiven?
+2026-04-03 13:00:24.216 | INFO | Retrieval started
+2026-04-03 13:00:24.220 | INFO | Retrieved 6 chunks
+2026-04-03 13:00:24.222 | INFO | Cache MISS → calling LLM
+2026-04-03 13:00:24.848 | INFO | Response time: 0.64s
+2026-04-03 13:38:43.322 | INFO | User question: what is rcm?
+2026-04-03 13:38:43.322 | INFO | Retrieval started
+2026-04-03 13:38:43.327 | INFO | Retrieved 6 chunks
+2026-04-03 13:38:43.328 | INFO | Cache MISS → calling LLM
+2026-04-03 13:38:44.548 | INFO | Response time: 1.23s
+2026-04-03 15:27:34.005 | INFO | User question: what is rcm ?
+2026-04-03 15:27:34.006 | INFO | Retrieval started
+2026-04-03 15:27:34.014 | INFO | Retrieved 6 chunks
+2026-04-03 15:27:34.014 | INFO | Cache MISS → calling LLM
+2026-04-03 15:27:35.459 | INFO | Response time: 1.46s
+2026-04-03 15:50:37.602 | INFO | User question: what is rcm?
+2026-04-03 15:50:37.623 | INFO | Retrieval started
+2026-04-03 15:50:37.628 | INFO | Retrieved 6 chunks
+2026-04-03 15:50:37.628 | INFO | Cache MISS → calling LLM
+2026-04-03 15:50:38.834 | INFO | Response time: 1.24s
+2026-04-03 16:08:34.791 | INFO | User question: How does insurance verification prevent claim denials?
+2026-04-03 16:08:34.791 | INFO | Retrieval started
+2026-04-03 16:08:34.796 | INFO | Retrieved 6 chunks
+2026-04-03 16:08:34.799 | INFO | Cache MISS → calling LLM
+2026-04-03 16:08:35.697 | INFO | Response time: 0.91s
+2026-04-03 16:08:50.566 | INFO | User question: Why do claims get denied?
+2026-04-03 16:08:50.566 | INFO | Retrieval started
+2026-04-03 16:08:50.569 | INFO | Retrieved 6 chunks
+2026-04-03 16:08:50.573 | INFO | Cache MISS → calling LLM
+2026-04-03 16:08:51.769 | INFO | Response time: 1.21s
+2026-04-03 16:09:04.198 | INFO | User question: Why is accounts receivable follow-up important?
+2026-04-03 16:09:04.198 | INFO | Retrieval started
+2026-04-03 16:09:04.200 | INFO | Retrieved 6 chunks
+2026-04-03 16:09:04.203 | INFO | Cache MISS → calling LLM
+2026-04-03 16:09:05.029 | INFO | Response time: 0.83s
+2026-04-03 16:26:49.378 | INFO | User question: How does patient statement processing improve transparency?
+2026-04-03 16:26:49.387 | INFO | Retrieval started
+2026-04-03 16:26:49.392 | INFO | Retrieved 6 chunks
+2026-04-03 16:26:49.392 | INFO | Cache MISS → calling LLM
+2026-04-03 16:26:50.513 | INFO | Response time: 1.14s
+2026-04-03 16:27:07.993 | INFO | User question: How does denial management improve revenue cycle efficiency?
+2026-04-03 16:27:07.993 | INFO | Retrieval started
+2026-04-03 16:27:07.995 | INFO | Retrieved 6 chunks
+2026-04-03 16:27:07.998 | INFO | Cache MISS → calling LLM
+2026-04-03 16:27:08.909 | INFO | Response time: 0.93s
+2026-04-03 16:42:20.301 | INFO | User question: who is patient ?
+2026-04-03 16:42:20.302 | INFO | Retrieval started
+2026-04-03 16:42:20.306 | INFO | Retrieved 6 chunks
+2026-04-03 16:42:20.307 | INFO | Cache MISS → calling LLM
+2026-04-03 16:42:21.440 | INFO | Response time: 1.14s
+2026-04-03 16:42:27.785 | INFO | User question: patient nam e?
+2026-04-03 16:42:27.786 | INFO | Retrieval started
+2026-04-03 16:42:27.787 | INFO | Retrieved 6 chunks
+2026-04-03 16:42:27.790 | INFO | Cache SEMANTIC HIT
+2026-04-03 16:42:27.791 | INFO | Response time: 0.01s
+2026-04-03 16:43:01.653 | INFO | User question: who is patient ?
+2026-04-03 16:43:01.653 | INFO | Retrieval started
+2026-04-03 16:43:01.672 | INFO | Retrieved 6 chunks
+2026-04-03 16:43:01.673 | INFO | Cache MISS → calling LLM
+2026-04-03 16:43:02.573 | INFO | Response time: 0.93s
+2026-04-03 16:43:16.874 | INFO | User question: what is patient name ?
+2026-04-03 16:43:16.875 | INFO | Retrieval started
+2026-04-03 16:43:16.876 | INFO | Retrieved 6 chunks
+2026-04-03 16:43:16.879 | INFO | Cache SEMANTIC HIT
+2026-04-03 16:43:16.879 | INFO | Response time: 0.01s
+2026-04-03 16:44:10.123 | INFO | User question: what is patient name  and age ?
+2026-04-03 16:44:10.123 | INFO | Retrieval started
+2026-04-03 16:44:10.127 | INFO | Retrieved 6 chunks
+2026-04-03 16:44:10.128 | INFO | Cache MISS → calling LLM
+2026-04-03 16:44:10.770 | INFO | Response time: 0.66s
+2026-04-03 16:44:38.199 | INFO | User question: patient name and age and his health problem ?
+2026-04-03 16:44:38.199 | INFO | Retrieval started
+2026-04-03 16:44:38.201 | INFO | Retrieved 6 chunks
+2026-04-03 16:44:38.205 | INFO | Cache SEMANTIC HIT
+2026-04-03 16:44:38.205 | INFO | Response time: 0.01s
+2026-04-03 16:45:01.011 | INFO | User question: what is patient name and age ?
+2026-04-03 16:45:01.011 | INFO | Retrieval started
+2026-04-03 16:45:01.013 | INFO | Retrieved 6 chunks
+2026-04-03 16:45:01.013 | INFO | Cache MISS → calling LLM
+2026-04-03 16:45:01.892 | INFO | Response time: 0.89s
+2026-04-03 16:45:53.671 | INFO | User question: patient history of illiness ?
+2026-04-03 16:45:53.671 | INFO | Retrieval started
+2026-04-03 16:45:53.678 | INFO | Retrieved 6 chunks
+2026-04-03 16:45:53.682 | INFO | Cache MISS → calling LLM
+2026-04-03 16:45:54.576 | INFO | Response time: 0.91s
+2026-04-03 16:46:09.944 | INFO | User question: his full name and age ?
+2026-04-03 16:46:09.945 | INFO | Retrieval started
+2026-04-03 16:46:09.946 | INFO | Retrieved 6 chunks
+2026-04-03 16:46:09.949 | INFO | Cache SEMANTIC HIT
+2026-04-03 16:46:09.950 | INFO | Response time: 0.01s
+2026-04-03 16:46:45.207 | INFO | User question: patient name illiness ?
+2026-04-03 16:46:45.208 | INFO | Retrieval started
+2026-04-03 16:46:45.211 | INFO | Retrieved 6 chunks
+2026-04-03 16:46:45.214 | INFO | Cache SEMANTIC HIT
+2026-04-03 16:46:45.214 | INFO | Response time: 0.02s
+2026-04-03 16:47:53.076 | INFO | User question: what treatment patient pamela should take for his diseases?
+2026-04-03 16:47:53.076 | INFO | Retrieval started
+2026-04-03 16:47:53.080 | INFO | Retrieved 6 chunks
+2026-04-03 16:47:53.085 | INFO | Cache MISS → calling LLM
+2026-04-03 16:47:54.959 | INFO | Response time: 1.89s
+2026-04-03 16:48:19.416 | INFO | User question: How many episodes of chest pain occurred?
+2026-04-03 16:48:19.416 | INFO | Retrieval started
+2026-04-03 16:48:19.419 | INFO | Retrieved 6 chunks
+2026-04-03 16:48:19.422 | INFO | Cache MISS → calling LLM
+2026-04-03 16:48:20.528 | INFO | Response time: 1.12s
+2026-04-03 16:48:34.864 | INFO | User question: Is there a family history of heart disease?
+2026-04-03 16:48:34.864 | INFO | Retrieval started
+2026-04-03 16:48:34.868 | INFO | Retrieved 6 chunks
+2026-04-03 16:48:34.872 | INFO | Cache MISS → calling LLM
+2026-04-03 16:48:35.767 | INFO | Response time: 0.91s
+2026-04-03 16:48:46.925 | INFO | User question: Does the patient take OTC drugs?
+2026-04-03 16:48:46.925 | INFO | Retrieval started
+2026-04-03 16:48:46.927 | INFO | Retrieved 6 chunks
+2026-04-03 16:48:46.930 | INFO | Cache MISS → calling LLM
+2026-04-03 16:48:47.764 | INFO | Response time: 0.84s
+2026-04-03 16:49:10.045 | INFO | User question: Is there a family history of heart disease?
+2026-04-03 16:49:10.045 | INFO | Retrieval started
+2026-04-03 16:49:10.046 | INFO | Retrieved 6 chunks
+2026-04-03 16:49:10.050 | INFO | Cache SEMANTIC HIT
+2026-04-03 16:49:10.050 | INFO | Response time: 0.01s
+2026-04-03 16:49:20.820 | INFO | User question: what is patient name ?
+2026-04-03 16:49:20.820 | INFO | Retrieval started
+2026-04-03 16:49:20.824 | INFO | Retrieved 6 chunks
+2026-04-03 16:49:20.827 | INFO | Cache SEMANTIC HIT
+2026-04-03 16:49:20.828 | INFO | Response time: 0.01s
+2026-04-03 19:47:57.240 | INFO | User question: what is rcm?
+2026-04-03 19:47:57.241 | INFO | Retrieval started
+2026-04-03 19:47:57.245 | INFO | Retrieved 6 chunks
+2026-04-03 19:47:57.246 | INFO | Cache MISS → calling LLM
+2026-04-03 19:47:58.740 | INFO | Response time: 1.51s

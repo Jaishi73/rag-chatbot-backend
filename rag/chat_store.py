@@ -58,9 +58,10 @@ def save_chat(chat: Dict[str, Any]) -> None:
 
 def ensure_title(chat: Dict[str, Any]) -> None:
     title = (chat.get("title") or "").strip()
+
     if title and title != "New Chat":
         return
-    # Title from first user message (truncate)
+ 
     for m in chat.get("messages", []):
         if m.get("role") == "user":
             t = (m.get("content") or "").strip()
@@ -68,3 +69,24 @@ def ensure_title(chat: Dict[str, Any]) -> None:
                 chat["title"] = (t[:48] + "…") if len(t) > 49 else t
             return
 
+def delete_chat(chat_id: str):
+    p=_chat_path(chat_id)
+
+    if p.exists():
+        p.unlink()
+
+# def clear_all_chats():
+#     for p in chats_dir().glob(".json"):
+#         p.unlink
+
+def clear_all_chats():
+    dir_path = chats_dir()
+
+    print("🔥 Clearing chats from:", dir_path)
+
+    files = list(dir_path.glob("*.json"))   # ✅ FIX HERE
+    print("Files found:", files)
+
+    for p in files:
+        print("Deleting:", p)
+        p.unlink()

@@ -1,5 +1,7 @@
-.venv/
 venv/
+venv/
+venv310/
+venv310n/
 __pycache__/
 *.pyc
 
@@ -12,3 +14,6 @@ data/chats/
 Thumbs.db
 .env
 *.env
+
+# Local files
+users.json

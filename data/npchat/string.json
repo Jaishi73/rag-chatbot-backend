@@ -1,0 +1,63 @@
+{
+  "chat_id": "string",
+  "title": "what is patient name ?",
+  "messages": [
+    {
+      "role": "user",
+      "content": "what is patient name ?"
+    },
+    {
+      "role": "assistant",
+      "content": "The patient's name is Pamela Rogers.",
+      "sources": [
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        }
+      ],
+      "cache_status": "MISS",
+      "response_time": 1.97
+    },
+    {
+      "role": "user",
+      "content": "what is patient name ?"
+    },
+    {
+      "role": "assistant",
+      "content": "The patient's name is Pamela Rogers.",
+      "sources": [
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        }
+      ],
+      "cache_status": "SEMANTIC_HIT",
+      "response_time": 0.02
+    }
+  ],
+  "updated_at": 1775023342.1428483
+}

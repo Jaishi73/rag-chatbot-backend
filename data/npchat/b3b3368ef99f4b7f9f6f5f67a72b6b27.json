@@ -1,0 +1,35 @@
+{
+  "chat_id": "b3b3368ef99f4b7f9f6f5f67a72b6b27",
+  "title": "what is rcm?",
+  "messages": [
+    {
+      "role": "user",
+      "content": "what is rcm?"
+    },
+    {
+      "role": "assistant",
+      "content": "Revenue Cycle Management (RCM) is a crucial financial process in the healthcare industry that encompasses the management of all administrative and clinical functions associated with the capture, management, and collection of patient service revenue. It involves the entire patient care journey, from scheduling appointments to the final payment of medical bills, aiming to optimize and streamline the financial aspects of a healthcare organization to ensure accurate and timely reimbursement for the services provided.",
+      "sources": [
+        {
+          "source": "13-Steps-Of-Revenue-Cycle-Management 3.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "13-Steps-Of-Revenue-Cycle-Management 3.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "13-Steps-Of-Revenue-Cycle-Management 3.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "13-Steps-Of-Revenue-Cycle-Management 3.pdf",
+          "chunk_index": 0
+        }
+      ],
+      "cache_status": "SEMANTIC_HIT",
+      "response_time": 0.01
+    }
+  ],
+  "updated_at": 1775045545.7146645
+}

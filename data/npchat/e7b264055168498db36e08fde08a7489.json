@@ -1,0 +1,147 @@
+{
+  "chat_id": "e7b264055168498db36e08fde08a7489",
+  "title": "what is patient name ?",
+  "messages": [
+    {
+      "role": "user",
+      "content": "what is patient name ?"
+    },
+    {
+      "role": "assistant",
+      "content": "The patient's name is Pamela Rogers.",
+      "sources": [
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        }
+      ],
+      "cache_status": "MISS",
+      "response_time": 3.26
+    },
+    {
+      "role": "user",
+      "content": "what is patient name ?"
+    },
+    {
+      "role": "assistant",
+      "content": "The patient's name is Pamela Rogers.",
+      "sources": [
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        }
+      ],
+      "cache_status": "SEMANTIC_HIT",
+      "response_time": 0.02
+    },
+    {
+      "role": "user",
+      "content": "what is payment posting ?"
+    },
+    {
+      "role": "assistant",
+      "content": "I cannot find any information about \"payment posting\" in the provided context.",
+      "sources": [
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        }
+      ],
+      "cache_status": "MISS",
+      "response_time": 0.75
+    },
+    {
+      "role": "user",
+      "content": "what is patient health issue ?"
+    },
+    {
+      "role": "assistant",
+      "content": "Based on the provided CONTEXT, the patient's health issue is likely angina pectoris, which is a symptom of ischemic cardiac origin. The patient's description of dull, aching, exertion-related substernal chest pain, along with her risk factors for coronary artery disease (CAD), such as family history of premature CAD, hypertension, and early surgical menopause, make angina pectoris the most likely diagnosis.",
+      "sources": [
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "patient data1.pdf",
+          "chunk_index": 0
+        }
+      ],
+      "cache_status": "MISS",
+      "response_time": 0.94
+    },
+    {
+      "role": "user",
+      "content": "what is rcm ?"
+    },
+    {
+      "role": "assistant",
+      "content": "Revenue Cycle Management (RCM) is a crucial financial process in the healthcare industry that encompasses the management of all administrative and clinical functions associated with the capture, management, and collection of patient service revenue. It involves the entire patient care journey, from scheduling appointments to the final payment of medical bills, aiming to optimize and streamline the financial aspects of a healthcare organization to ensure accurate and timely reimbursement for the services provided.",
+      "sources": [
+        {
+          "source": "13-Steps-Of-Revenue-Cycle-Management 3.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "13-Steps-Of-Revenue-Cycle-Management 3.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "13-Steps-Of-Revenue-Cycle-Management 3.pdf",
+          "chunk_index": 0
+        },
+        {
+          "source": "13-Steps-Of-Revenue-Cycle-Management 3.pdf",
+          "chunk_index": 0
+        }
+      ],
+      "cache_status": "MISS",
+      "response_time": 0.91
+    }
+  ],
+  "updated_at": 1775023494.7714832
+}
