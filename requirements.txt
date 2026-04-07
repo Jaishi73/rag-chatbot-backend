@@ -6,5 +6,6 @@ python-docx
 pandas
 requests
 python-dotenv
-
+uvicorn
+fastapi
 
